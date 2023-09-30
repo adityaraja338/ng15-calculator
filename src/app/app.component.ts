@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calculator';
+
+  darkMode=true;
+  color='orange';
+  calculatorMode = 'Standard'
+
 }
