@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CalculatorService} from "./calculator.service";
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,11 @@ export class AppComponent {
 
   darkMode=true;
   color='orange';
-  calculatorMode = 'Standard'
+  calculatorMode = 'Standard';
+  hamburgerOpen = false;
 
+  constructor(private calculatorService :CalculatorService) {
+  }
+
+  protected readonly console = console;
 }

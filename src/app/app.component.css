@@ -33,6 +33,13 @@
   }
 }
 
+@media (max-width:767px){
+  .options{
+    position: absolute;
+    display: none;
+  }
+}
+
 .options-div{
   height: 100%;
   display: flex;
@@ -46,6 +53,14 @@
 
 .options.light{
   color:#393E46;
+}
+
+.dark .calculator-mode-btn svg{
+  fill:#eee;
+}
+
+.light .calculator-mode-btn svg{
+  fill:#393E46;
 }
 
 
@@ -307,10 +322,10 @@ button{
 .slider:before {
   position: absolute;
   content: "";
-  height: 14px;
-  width: 14px;
+  height: 13px;
+  width: 13px;
   left: 2px;
-  bottom: 1px;
+  bottom: 2px;
   transition: .4s;
 }
 
@@ -348,6 +363,94 @@ input:checked + .slider:before {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+
+/* Hamburger Menu */
+.hamburger{
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+}
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  transition: .4s;
+}
+
+.dark .hamburger-menu div{
+  background: #EEE;
+}
+
+.light .hamburger-menu div{
+  background: #393E46;
+}
+
+.hamburger-menu.open div:nth-child(1) {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+.hamburger-menu.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open div:nth-child(3) {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (min-width: 768px) {
+  .options{
+    /*position: absolute;*/
+    display: block !important;
+    /* Add other styles for the options menu */
+  }
+}
+
+@media (max-width:767px){
+  .options{
+    position: absolute;
+    display: none;
+    top: 50px;
+    left:10px;
+    height: auto !important;
+    padding: 50px;
+    border-radius: 12px;
+    z-index: 2;
+    /*align-items: start;*/
+    /*justify-content: start;*/
+    /* Add other styles for the options menu */
+  }
+
+  .dark.options{
+    /*color: #393E46;*/
+    background-color: #23262B;
+    border: 2px solid #EEEEEE;
+  }
+
+  .light.options{
+    /*color: #EEE;*/
+    background-color: #EEEEEEFF;
+    border: 2px solid #393E46CF;
+  }
+
+  .options-div{
+    justify-content: start;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
 }
 
 .orange-circle{
