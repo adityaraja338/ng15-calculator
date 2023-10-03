@@ -11,7 +11,7 @@ export class AppComponent {
 
   darkMode=true;
   color='orange';
-  calculatorMode = 'Length';
+  calculatorMode = 'Standard';
   hamburgerOpen = false;
 
   length1:string="";

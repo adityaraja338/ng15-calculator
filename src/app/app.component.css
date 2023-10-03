@@ -69,6 +69,7 @@
   width: 248px;
   border-radius: 2px;
   margin-top:20px;
+  position: relative;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -139,6 +140,7 @@
 
 .dark .screen{
   background-color: #EEE;
+  color: #393E46;
 }
 
 .dark .calculator.orange-mode .screen{
@@ -201,6 +203,7 @@
 
 .light .screen{
   background-color: #393E46;
+  color: #EEE;
 }
 
 .light .calculator.orange-mode .screen{

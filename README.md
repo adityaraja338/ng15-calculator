@@ -1,27 +1,119 @@
-# Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+# Angular Calculator App
 
-## Development server
+Welcome to the Angular Calculator App! This web application provides a versatile calculator and a length converter, all built with Angular, without the use of external libraries. You can easily switch between light mode and dark mode, customize the color effect of the calculator, and choose between a normal calculator and a length converter. This app is also hosted on Firebase for easy access.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Calculator**: Perform basic arithmetic operations such as addition, subtraction, multiplication, division, and calculate remainders.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Length Converter**: Quickly convert between various length units, including meters, feet, and centimeters.
 
-## Build
+- **Color Customization**: Customize the calculator's appearance by changing the color scheme to suit your preferences.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Dark and Light Modes**: Switch between dark mode and light mode for a comfortable viewing experience, day or night.
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Select Calculator Type**: Choose between the "Calculator" and "Length Converter" modes by clicking the corresponding tabs.
 
-## Running end-to-end tests
+2. **Perform Calculations**:
+   - For the Calculator:
+     - Click the number and operator buttons to build your expression.
+     - Click the "=" button to compute the result.
+     - Use the "C" button to clear the current input, and "AC" to clear all inputs.
+   - For the Length Converter:
+     - Enter a value in the input field.
+     - Select the source and target units from the options.
+     - The converted value will be displayed instantly.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Color Customization**:
+   - Use the color picker to choose a color scheme for the calculator.
 
-## Further help
+4. **Toggle Dark/Light Mode**:
+   - Click the toggle switch icon to switch between light mode and dark mode.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5. **Hosted Version**:
+   - Access the hosted version of this app on Firebase: [Angular Calculator App](https://ng15-calculator.web.app)
+  
+## Development
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+
+### Installation
+
+1. Clone this repository:
+
+   ```shell
+   git clone https://github.com/adityaraja338/ng15-calculator.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```shell
+   cd angular-calculator-app
+   ```
+
+3. Install the required dependencies:
+
+   ```shell
+   npm install
+   ```
+
+### Development Server
+
+Run the app locally:
+
+```shell
+ng serve
+```
+
+Open your browser and navigate to `http://localhost:4200/` to see the app in action.
+
+## Deployment
+
+Deploy your app to Firebase hosting:
+
+1. Install Firebase CLI (if not already installed):
+
+   ```shell
+   npm install -g firebase-tools
+   ```
+
+2. Log in to your Firebase account:
+
+   ```shell
+   firebase login
+   ```
+
+3. Initialize Firebase for your project (follow the prompts):
+
+   ```shell
+   firebase init
+   ```
+
+4. Deploy the app:
+
+   ```shell
+   firebase deploy
+   ```
+
+## Contribution
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository.
+
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+
+3. Make your changes and commit them: `git commit -m 'Add some feature'`.
+
+4. Push to the branch: `git push origin feature/your-feature-name`.
+
+5. Create a pull request with a detailed description of your changes.
+
+## License
+
+Feel free to modify this content according to your project's specifics. This README provides an overview of the project, instructions for usage and development, and information on how to contribute and license the project.
