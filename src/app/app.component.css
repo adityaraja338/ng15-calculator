@@ -75,7 +75,26 @@
   -o-border-radius: 2px;
 }
 
-.calculator{
+.screen div{
+  width: 100%;
+  height: 100%;
+}
+
+.screen div .last{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.screen div .current{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  max-width: 95%;
+  overflow: auto;
+}
+
+.calculator.frame{
   height: 406px;
   width: 300px;
   border-radius: 10px;
@@ -88,34 +107,33 @@
   -o-border-radius: 10px;
 }
 
-.dark .calculator{
+.dark .frame{
   background: #171A20;
   border: 2px solid #EEE;
 }
 
-.light .calculator{
+.light .frame{
   border: 2px solid #393E46;
   background: #EEE;
 }
 
-
-.calculator .buttons button:hover{
+.frame .buttons button:hover{
   filter: none !important;
   -webkit-filter: none !important;
 }
 
 
 /* Dark Mode */
-.dark .calculator.orange-mode{
+.dark .frame.orange-mode{
   box-shadow: 50px 50px 200px 0px rgba(253, 112, 20, 0.25), 8px 6px 0px 0px rgba(253, 112, 20, 0.44);
 }
 
-.dark .calculator.green-mode{
+.dark .frame.green-mode{
   box-shadow: 50px 50px 200px 0px rgba(20, 253, 99, 0.25), 8px 6px 0px 0px rgba(20, 253, 99, 0.44);
 }
 
 
-.dark .calculator.white-mode{
+.dark .frame.white-mode{
   box-shadow: 50px 50px 200px 0px rgba(238, 238, 238, 0.25), 8px 6px 0px 0px rgba(238, 238, 238, 0.44);
 }
 
@@ -168,16 +186,16 @@
 
 
 /* Light Mode */
-.light .calculator.orange-mode{
+.light .frame.orange-mode{
   box-shadow: 50px 50px 200px 0px rgba(253, 112, 20, 0.58), 8px 6px 0px 0px rgba(253, 112, 20, 0.44);
 }
 
-.light .calculator.green-mode{
+.light .frame.green-mode{
   box-shadow: 50px 50px 200px 0px rgba(20, 253, 99, 0.58), 8px 6px 0px 0px rgba(20, 253, 99, 0.44);
 }
 
 
-.light .calculator.white-mode{
+.light .frame.white-mode{
   box-shadow: 50px 50px 200px 0px rgba(57, 62, 70, 0.50), 8px 6px 0px 0px rgba(57, 62, 70, 0.44);
 }
 
@@ -467,4 +485,34 @@ input:checked + .slider:before {
 
 .light .white-circle{
   background-color: #393E46;
+}
+
+/* Length Converter */
+.length.frame{
+  height: 100px;
+  width: 280px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.length input{
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 36px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.dark .length input{
+  background-color: #EEE;
+  color: #393E46;
+}
+
+.light .length input{
+  background-color: #393E46;
+  color: #EEE;
 }
