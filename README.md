@@ -53,7 +53,7 @@ Welcome to the Angular Calculator App! This web application provides a versatile
 2. Navigate to the project directory:
 
    ```shell
-   cd angular-calculator-app
+   cd ng15-calculator
    ```
 
 3. Install the required dependencies:
